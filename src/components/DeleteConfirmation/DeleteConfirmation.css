@@ -1,0 +1,104 @@
+.deleteMain{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    align-content: center;
+    top: 20%;
+    margin-left: 20%;
+    z-index: 1000;
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+    border-radius: 20px;
+}
+
+.deleteBox{
+    width: 450px;
+    height: 450px;
+    background-color: rgb(185, 167, 167);
+    border-radius: 50px;
+}
+
+.deleteTitle{
+    font-family: "Varela Round", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.deleteSubTitle{
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.deleteDeleteButton {
+    position: absolute;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(128, 0, 0);
+    font-weight: 1000;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+.deleteDeleteButton:hover {
+    background-color: rgb(87, 0, 0);
+}
+
+.deleteBackButton {
+    margin-left: 60%;
+    position: absolute;
+    width: 150px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+.deleteBackButton:hover {
+    background-color: rgb(1, 114, 114);
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d7e600, 0 0 40px #c4e600, 0 0 50px #bce600, 0 0 60px #bce600, 0 0 70px #e2e600;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff9d8, 0 0 40px #fcff4d, 0 0 50px #ffe44d, 0 0 60px #c1ff4d, 0 0 70px #f3ff4d, 0 0 80px #ffed4d;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d7e600, 0 0 40px #c4e600, 0 0 50px #bce600, 0 0 60px #bce600, 0 0 70px #e2e600;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff9d8, 0 0 40px #fcff4d, 0 0 50px #ffe44d, 0 0 60px #c1ff4d, 0 0 70px #f3ff4d, 0 0 80px #ffed4d;
+  }
+}

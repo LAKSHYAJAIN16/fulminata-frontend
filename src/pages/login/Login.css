@@ -1,0 +1,190 @@
+:root {
+  --ml: 2.35vw;
+}
+
+.login {
+  z-index: 2;
+  zoom: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.loginBgImage {
+  width: 70%;
+  animation: 0.8s loginImageIn;
+}
+
+.loginTitle {
+  font-size: clamp(20px, 10vw, 100px);
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  opacity: 0;
+  animation: loginTitlegradientIn 0.8s 0.3s forwards;
+}
+
+.loginForm {
+  margin-top: 20px;
+  margin-left: var(--ml);
+  display: flex;
+  float: left;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.loginOr {
+  margin-left: var(--ml);
+  font-size: 20px;
+}
+
+.loginLabel {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.loginInput {
+  padding: 1rem;
+  margin-left: -5px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton2Fulminata {
+  background-color: #000000;
+  margin-top: 20px;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+  cursor: pointer;
+}
+
+.loginButton2Fulminata:hover {
+  background-color: teal;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.loginButtonGoogle2 {
+  background-color: #000000;
+  margin-top: 40px;
+  margin-left: var(--ml);
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+  cursor: pointer;
+}
+
+.loginButtonGoogle2:hover {
+  background-color: #fff6dd;
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.loginButtonFacebook2 {
+  background-color: #000000;
+  width: 16vw;
+  height: 60px;
+  margin-left: var(--ml);
+  text-align: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+  cursor: pointer;
+}
+
+.loginButtonFacebook2:hover {
+  background-color: #355dac;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.facebookicon {
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  zoom: 1.2;
+}
+
+.googleIcon {
+  margin-right: 10px;
+  zoom: 1.4;
+  background: linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0
+      25%/48% 40%,
+    linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
+    linear-gradient(-40deg, transparent 53%, #ea4335 54%),
+    linear-gradient(45deg, transparent 46%, #4285f4 48%), #34a853;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes loginTitlegradientIn {
+  0% {
+    background-size: 0% 3px;
+    margin-left: -100vw;
+    opacity: 0;
+  }
+  10%{
+    margin-left: -80vw;
+  }
+  100% {
+    background-size: 100% 3px;
+    margin-left: 2vw;
+    opacity: 1;
+  }
+}
+
+@keyframes loginImageIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

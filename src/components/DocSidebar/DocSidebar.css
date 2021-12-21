@@ -1,0 +1,30 @@
+.dsMain {
+  position: absolute;
+  margin-left: 2.5vw;
+  height: 90vh;
+  width: 15vw;
+  background-color: whitesmoke;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.dsHeader {
+  font-size: 30px;
+  color: gray;
+  border-left: 5px solid white;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+}
+
+.dsHeaderContent {
+  font-size: 25px;
+  color: gray;
+  padding-left: 10px;
+  border-left-color: white;
+  border-left-width: 5px;
+  border-left-style: solid;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

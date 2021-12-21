@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap");
+
+.register {
+  height: calc(140vh - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(8, 8, 8, 0.5), rgba(0, 0, 0, 0.8)),
+    url("https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EQZRDGANAM7FDE6XPJJMVGSREM.gif");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  zoom: 0.9;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.registerTitle {
+  color: white;
+  font-size: clamp(30px, 5vw, 300px);
+  margin-left: -70vw;
+  margin-top: -70px;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  animation: registerTitleIn2 0.5s 0s forwards,
+    registerTitleIn 0.5s 0.4s forwards,
+    registerTitlegradientIn 0.5s 0.8s forwards;
+}
+
+.registerSubTitle {
+  color: white;
+  font-size: clamp(15px, 2vw, 300px);
+  margin-left: -65vw;
+  margin-top: 10px;
+}
+
+.registerOr {
+  color: white;
+  font-size: 30px;
+  margin-top: -90px;
+}
+
+.registerAsteriks {
+  cursor: pointer;
+}
+
+.rReviewWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rReviewTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.rReviewProperty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rReviewPropertyLabel {
+  margin-right: 10vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rReviewPropertyInput {
+  margin-left: 10vw;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid rgb(0, 185, 77);
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+
+.rReviewPropertyInput:focus {
+  border: 3px solid teal;
+}
+
+.rReviewCountrySelector {
+  margin-left: 12vw;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid rgb(0, 185, 77);
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 20px;
+  width: 20vw;
+}
+
+.rReviewSubmitButton {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  text-align: center;
+  color: white;
+  background-color: #000000;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 238, 255, 0.19) 0px 10px 20px,
+    rgba(0, 238, 255, 0.23) 0px 6px 6px;
+}
+
+.rReviewSubmitButton:hover {
+  background-color: rgb(0, 107, 107);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.rWrapper {
+  margin-left: -2vw;
+}
+
+.rProgressBar {
+  zoom: 2;
+  position: absolute;
+  display: flex;
+  margin-top: 130px;
+  margin-left: -5vw;
+  transform: rotateZ(-90deg);
+}
+
+.rCountrySelector {
+  width: 50vw;
+  margin-top: 80px;
+  margin-left: 29vw;
+}
+
+.rName {
+  font-size: 50px;
+  zoom: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.rNameIcon {
+  margin-left: 10px;
+  zoom: 1;
+}
+
+.rNameBouncer {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 60px;
+  animation: bounce 0.5s forwards alternate;
+}
+
+.rNameBouncerVariation2 {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 60px;
+}
+
+.rNameBouncerVariation {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 60px;
+  animation: bounceVariation 0.5s forwards alternate;
+}
+
+.rPasswordDisplayToggle {
+  position: absolute;
+  margin-left: 48vw;
+  margin-top: 188px;
+  zoom: 1.5;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.rNameInput {
+  margin-top: 100px;
+  margin-left: 29vw;
+  width: 50vw;
+  height: 50px;
+  border: 3px solid rgb(0, 185, 77);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+  animation: nameInputIn 0.3s 0.2s ease forwards;
+}
+
+.rNameInput:focus {
+  border: 3px solid teal;
+}
+
+.rNameInputNoAnim {
+  margin-top: 100px;
+  margin-left: 29vw;
+  width: 50vw;
+  height: 50px;
+  border: 3px solid rgb(0, 185, 77);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  outline: none;
+  text-align: center;
+}
+
+.rNameInputNoAnim:focus {
+  border: 3px solid teal;
+}
+
+.rPasswordStrength {
+  margin-left: 51vw;
+  font-size: 30px;
+  color: red;
+}
+
+.rBackButton {
+  display: inline-block;
+  background-color: #000000;
+  margin-top: 100px;
+  margin-left: 30vw;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 128, 128, 0.377) 0px 22px 70px 4px;
+}
+
+.rBackButton:hover {
+  background-color: teal;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.rNextButton {
+  display: inline-block;
+  background-color: #000000;
+  margin-top: 100px;
+  margin-left: 45vw;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 128, 128, 0.377) 0px 22px 70px 4px;
+}
+
+.rNextButton:hover {
+  background-color: teal;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.rNextButtonWMargin {
+  display: inline-block;
+  background-color: #000000;
+  margin-top: 100px;
+  margin-left: 15vw;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 128, 128, 0.377) 0px 22px 70px 4px;
+}
+
+.rNextButtonWMargin:hover {
+  background-color: teal;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.rFooter {
+  margin-left: 2vw;
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.rFooter > b {
+  font-weight: 400;
+}
+
+.rLink {
+  color: #355dac;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.rLink:hover {
+  color: #ac3535;
+}
+
+.loginButtonGoogle {
+  background-color: #000000;
+  margin-top: 40px;
+  margin-left: -30vw;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+.loginButtonGoogle:hover {
+  background-color: #fff6dd;
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.loginButtonFacebook {
+  background-color: #000000;
+  margin-top: 0px;
+  margin-left: -30vw;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+.loginButtonFacebook:hover {
+  background-color: #355dac;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.loginButtonFulminata {
+  background-color: #000000;
+  margin-top: -110px;
+  margin-left: 30vw;
+  width: 16vw;
+  height: 60px;
+  text-align: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
+    rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+.loginButtonFulminata:hover {
+  background-color: rgb(0, 107, 107);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.facebookicon {
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  zoom: 1;
+}
+
+.googleIcon {
+  margin-right: 10px;
+  zoom: 1.4;
+  background: linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0
+      25%/48% 40%,
+    linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
+    linear-gradient(-40deg, transparent 53%, #ea4335 54%),
+    linear-gradient(45deg, transparent 46%, #4285f4 48%), #34a853;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.fulminataIcon {
+  color: white;
+}
+
+.transitionSUp {
+  animation: SUp 0.5s ease forwards;
+}
+
+.transitionSLeft {
+  animation: SLeft 0.5s ease forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes registerTitleIn {
+  0% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+
+@keyframes registerTitleIn2 {
+  0% {
+    margin-left: -90vw;
+  }
+  100% {
+    margin-left: -70vw;
+  }
+}
+
+@keyframes registerTitlegradientIn {
+  0% {
+    background-size: 0% 3px;
+  }
+  100% {
+    background-size: 100% 3px;
+  }
+}
+
+@keyframes nameInputIn {
+  0% {
+    margin-left: -29vw;
+  }
+  100% {
+    margin-left: 29vw;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 50px;
+  }
+}
+
+@keyframes bounceVariation {
+  0% {
+    margin-left: -50vw;
+  }
+  100% {
+    margin-left: 0vw;
+    margin-top: 50px;
+  }
+}
+
+@keyframes SUp {
+  0% {
+    opacity: 1;
+    margin-top: -70px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -400px;
+  }
+}
+
+@keyframes SLeft {
+  0% {
+    margin-left: -2vw;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 20vw;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,76 @@
+.footerMain{
+    display: flex;
+    width: 108vw;
+    height: 40vh;
+    margin-top: 100px;
+    background-color: rgb(39, 39, 39);
+}
+
+.footerAboutUs{
+    color: white;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.footerAboutUsContent{
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    margin-left: 1vw;
+    margin-top: 13vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.footerContactUs{
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-top: 23vh;
+}
+
+.footerEmailIcon{
+    position: absolute;
+    color: white;
+    zoom: 1.25;
+    margin-top: 24vh;
+    margin-left: 0.5vw;
+}
+
+.footerEmailText{
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 2.5vw;
+    color: white;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+}
+
+.footerPhoneIcon{
+    position: absolute;
+    color: white;
+    zoom: 1.25;
+    margin-top: 28vh;
+    margin-left: 0.5vw;
+}
+
+.footerPhoneText{
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 2.5vw;
+    color: white;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+}
+
+.footerCopyright{
+    position: absolute;
+    margin-left: 190vw;
+    margin-top: 70vh;
+    color: white;
+    zoom: 0.5;
+}

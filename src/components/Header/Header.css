@@ -1,0 +1,77 @@
+.header {
+    margin-top: 30px;
+}
+  
+.headerTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lora", serif;
+    color: #444;
+}
+  
+.headerTitleSm {
+  position: absolute;
+  top: 18%;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 100;
+}
+  
+.headerTitleLg {
+  position: absolute;
+  top: 20%;
+  font-size: 10vw;
+  font-weight: 200;
+}
+
+.headerTitleSmWhite {
+  position: absolute;
+  top: 18%;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.headerTitleLgWhite {
+  position: absolute;
+  top: 20%;
+  font-size: 10vw;
+  color: white;
+}
+  
+.headerImg {
+    width: 100%;
+    height: 100%; 
+}
+
+@media screen and (min-width: 700px) {
+  
+}
+
+@media screen and (max-width: 700px) {
+  .headerTitleSm{
+    font-size: 20px;
+  }
+  .headerTitleSmWhite{
+    font-size: 20px;
+  }
+
+  .headerTitleLg{
+    font-size: 80px;
+  }
+  .headerTitleLgWhite{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .headerTitleLg{
+    font-size: 60px;
+    top: 25%;
+  }
+  .headerTitleLgWhite{
+    font-size: 60px;
+    top: 25%;
+  }
+}

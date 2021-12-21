@@ -1,0 +1,8 @@
+{
+    "creator" : "Lakshya Jain",
+    "platform" : "react",
+    "platoon" : "IP",
+    "regionserver" : "5",
+    "useIPConfig" : true,
+    "isProduction" : false
+}
